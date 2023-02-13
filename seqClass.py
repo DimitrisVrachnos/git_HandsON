@@ -12,6 +12,7 @@ if len(sys.argv) == 1:
 
 args = parser.parse_args()
 
+#Checks the sequence for T or U and prints accordingly
 args.seq = args.seq.upper()                 # Note we just added this line
 if re.search('^[ACGTU]+$', args.seq):
     if re.search('T', args.seq):
@@ -31,6 +32,7 @@ if args.motif:
     else:
         print("NOT FOUND")
 
+#seaches and finds motifs in the sequence provided
 if args.motif:
     args.motif = args.motif.upper()
     print(f'Motif search enabled: looking for motif "{args.motif}" in sequence "{args.seq}"... ', end = '')
