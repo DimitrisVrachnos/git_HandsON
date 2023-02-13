@@ -37,6 +37,6 @@ if args.motif:
     if re.search(args.motif, args.seq):
         print("E")
     else:
-        print("NOT OK")
+        print("A")
 
 
