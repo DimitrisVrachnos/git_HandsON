@@ -1,4 +1,3 @@
-
 import sys, re
 from argparse import ArgumentParser
 
@@ -40,5 +39,3 @@ if args.motif:
         print("T")
     else:
         print("A")
-
-
